@@ -13,15 +13,9 @@ void main() {
           app.main();
           await tester.pumpAndSettle();
 
-          // Finds the floating action button to tap on.
-          final Finder fab = find.byTooltip('Increment');
 
-          // Emulate a tap on the floating action button.
-          await tester.tap(fab);
 
-          await tester.pumpAndSettle();
-
-          expect(find.text('1'), findsOneWidget);
+          expect(find.text('quidem molestiae enim'), findsOneWidget);
         });
   });
 }
